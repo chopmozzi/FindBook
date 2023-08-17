@@ -13,6 +13,8 @@
 		83B847E82A8DF62900FF7D8A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83B847E62A8DF62900FF7D8A /* Main.storyboard */; };
 		83B847EA2A8DF62A00FF7D8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83B847E92A8DF62A00FF7D8A /* Assets.xcassets */; };
 		83B847ED2A8DF62A00FF7D8A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83B847EB2A8DF62A00FF7D8A /* LaunchScreen.storyboard */; };
+		83B847F62A8DFDC300FF7D8A /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = 83B847F52A8DFDC300FF7D8A /* SwiftSoup */; };
+		83B847F82A8DFDDB00FF7D8A /* Crawling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B847F72A8DFDDA00FF7D8A /* Crawling.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,7 @@
 		83B847E92A8DF62A00FF7D8A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		83B847EC2A8DF62A00FF7D8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		83B847EE2A8DF62A00FF7D8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83B847F72A8DFDDA00FF7D8A /* Crawling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crawling.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83B847F62A8DFDC300FF7D8A /* SwiftSoup in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +67,7 @@
 				83B847E92A8DF62A00FF7D8A /* Assets.xcassets */,
 				83B847EB2A8DF62A00FF7D8A /* LaunchScreen.storyboard */,
 				83B847EE2A8DF62A00FF7D8A /* Info.plist */,
+				83B847F72A8DFDDA00FF7D8A /* Crawling.swift */,
 			);
 			path = FindBook;
 			sourceTree = "<group>";
@@ -83,6 +88,9 @@
 			dependencies = (
 			);
 			name = FindBook;
+			packageProductDependencies = (
+				83B847F52A8DFDC300FF7D8A /* SwiftSoup */,
+			);
 			productName = FindBook;
 			productReference = 83B847DD2A8DF62900FF7D8A /* FindBook.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,9 @@
 				Base,
 			);
 			mainGroup = 83B847D42A8DF62900FF7D8A;
+			packageReferences = (
+				83B847F42A8DFDC200FF7D8A /* XCRemoteSwiftPackageReference "SwiftSoup" */,
+			);
 			productRefGroup = 83B847DE2A8DF62900FF7D8A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,6 +149,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83B847F82A8DFDDB00FF7D8A /* Crawling.swift in Sources */,
 				83B847E52A8DF62900FF7D8A /* ViewController.swift in Sources */,
 				83B847E12A8DF62900FF7D8A /* AppDelegate.swift in Sources */,
 				83B847E32A8DF62900FF7D8A /* SceneDelegate.swift in Sources */,
@@ -358,6 +370,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		83B847F42A8DFDC200FF7D8A /* XCRemoteSwiftPackageReference "SwiftSoup" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scinfu/SwiftSoup";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		83B847F52A8DFDC300FF7D8A /* SwiftSoup */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 83B847F42A8DFDC200FF7D8A /* XCRemoteSwiftPackageReference "SwiftSoup" */;
+			productName = SwiftSoup;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 83B847D52A8DF62900FF7D8A /* Project object */;
 }
